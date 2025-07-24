@@ -1,0 +1,17 @@
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: Pretendard, sans-serif;
+}
+
+.app-info {
+  margin: 20px 0;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 12px;
+  padding-bottom: 40px;
+}
