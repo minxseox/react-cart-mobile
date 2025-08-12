@@ -1,0 +1,159 @@
+/* 페이지 프레임 */
+.page {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* 상단바 */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.topbar h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.navBtn {
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 카드 프리뷰 */
+.previewWrap {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 12px;
+}
+.card {
+  width: 280px;
+  height: 160px;
+  border-radius: 12px;
+  background: #1f2937; /* 진한 회색 */
+  color: #fff;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+}
+.chip {
+  width: 34px;
+  height: 24px;
+  background: #b59a4a;
+  border-radius: 4px;
+  position: absolute;
+  left: 18px;
+  top: 18px;
+}
+.cardNumRow {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  top: 64px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.cardBottom {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+}
+.cardOwner {
+  text-transform: uppercase;
+}
+.cardExp {
+  opacity: 0.95;
+}
+
+/* 폼 */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.label {
+  font-size: 13px;
+  color: #374151;
+}
+.rowBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.counter {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.input {
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f3f4f6;
+  padding: 0 14px;
+  font-size: 14px;
+}
+.inputSm {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f3f4f6;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+/* CVC 도움 아이콘 */
+.helpIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #6b7280;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 700;
+  cursor: help;
+}
+
+/* 비밀번호 2칸 + 점 2개 */
+.pinRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pinBox {
+  width: 40px;
+  height: 40px;
+  background: #f4f2f7;
+  border-radius: 8px;
+  border: 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+.pinDot {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* 제출 버튼 */
+.submit {
+  margin-top: 6px;
+  height: 46px;
+  border: 0;
+  border-radius: 999px;
+  background: #000;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
