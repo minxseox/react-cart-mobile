@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+.vite/
+*.log
+
+# builds
+dist/
+dist-ssr/
+
+# env
+.env
+.env.*.local
+
+# editor/system
+.vscode/
+.idea/
+.DS_Store
+
+# keep docs for GitHub Pages
+# (docs 폴더는 추적 유지)
