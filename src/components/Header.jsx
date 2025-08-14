@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import cartIcon from "../image/shopping-cart.png"; // 네 장바구니 이미지 경로
+import cartIcon from "../image/shopping-cart.png";
 
 export default function Header({ cartCount = 0, onCartClick }) {
   return (
