@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
 import Header from "./components/Header.jsx";
@@ -6,16 +5,14 @@ import ProductCard from "./components/ProductCard.jsx";
 import CardList from "./components/CardList.jsx";
 import CardForm from "./components/CardForm.jsx";
 
-// ⬇️ 확실한 경로(확장자까지)로 불러옵니다.
 import * as productsMod from "./data/products.js";
 
 import "./App.css";
 
-/** 모듈 모양이 어떤 경우든 배열로 정규화 */
 function normalizeProducts(mod) {
   if (Array.isArray(mod)) return mod;
   if (Array.isArray(mod?.default)) return mod.default;
-  if (Array.isArray(mod?.products)) return mod.products; // named export 대비
+  if (Array.isArray(mod?.products)) return mod.products;
   return [];
 }
 
@@ -41,7 +38,6 @@ function ProductListPage({ cartItems, setCartItems, handlePurchase }) {
           <p>현재 {items.length}개의 상품이 있습니다.</p>
         </div>
 
-        {/* 디버그 박스: items가 비면 모듈에 뭐가 왔는지 보여줌 */}
         {items.length === 0 && (
           <pre
             style={{
@@ -78,9 +74,6 @@ raw=${JSON.stringify(productsMod).slice(0, 400)}...`}
   );
 }
 
-// ──────────────────────────────────────────────────────────────
-// 앱 루트
-// ──────────────────────────────────────────────────────────────
 export default function App() {
   const [cartItems, setCartItems] = useState([]);
   const [cards, setCards] = useState([]);
